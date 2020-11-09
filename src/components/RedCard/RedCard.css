@@ -1,0 +1,32 @@
+.RedCard {
+  position: relative;
+  background: #ff6f61 url("./background.png") no-repeat bottom;
+  max-width: 1440px;
+  min-height: 900px;
+}
+.RedCard .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 764px) {
+  .RedCard .content {
+    flex-direction: column;
+  }
+}
+.RedCard .content h1 {
+  margin-left: 100px;
+  font-family: Bebas Neue;
+  font-size: 1em;
+  line-height: 86px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.RedCard .luckylogo {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+/*# sourceMappingURL=RedCard.css.map */

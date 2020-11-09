@@ -1,0 +1,92 @@
+.TraktorozavodCard {
+  max-width: 1440px;
+  min-height: 900px;
+  background: #f5f5f5;
+  /* light */
+  padding-top: 10px;
+  position: relative;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+}
+.TraktorozavodCard .content {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1404px;
+  min-height: 814px;
+  background: #f5f5f5;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+.TraktorozavodCard .content .train {
+  position: absolute;
+  left: -10%;
+  top: 36%;
+}
+@media (max-width: 1270px) {
+  .TraktorozavodCard .content .train {
+    left: -30%;
+  }
+}
+@media (max-width: 1087px) {
+  .TraktorozavodCard .content .train {
+    left: -50%;
+  }
+}
+@media (max-width: 925px) {
+  .TraktorozavodCard .content .train {
+    left: -70%;
+  }
+}
+@media (max-width: 812px) {
+  .TraktorozavodCard .content .train {
+    left: -90%;
+  }
+}
+@media (max-width: 722px) {
+  .TraktorozavodCard .content .train {
+    display: none;
+  }
+}
+.TraktorozavodCard .content h1 {
+  max-width: 600px;
+  font-family: Bebas Neue;
+  font-size: 1em;
+  line-height: 86px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #5f60e5;
+  margin: 100px 20% 0 auto;
+}
+@media (max-width: 762px) {
+  .TraktorozavodCard .content h1 {
+    word-wrap: break-word;
+    margin: 100px auto 0 auto;
+  }
+}
+.TraktorozavodCard .content .FirstLetterText {
+  margin: 0 10% 0 auto;
+}
+.TraktorozavodCard .loading {
+  position: absolute;
+  bottom: 10px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 361px) {
+  .TraktorozavodCard .loading {
+    display: none;
+  }
+}
+.TraktorozavodCard .luckylogo {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+@media (max-width: 491px) {
+  .TraktorozavodCard .luckylogo {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=TraktorozavodCard.css.map */

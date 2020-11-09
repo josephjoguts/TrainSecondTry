@@ -1,0 +1,52 @@
+.LeninCard {
+  max-width: 1440px;
+  min-height: 900px;
+  background: #f5f5f5;
+  /* light */
+  padding-top: 10px;
+  position: relative;
+
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+  .content {
+    margin: 0 auto;
+    max-width: 1404px;
+    min-height: 814px;
+    border-radius: 25px;
+    border: 1px solid black;
+    background: #ff6f61 url("./background.png") no-repeat;
+    h1 {
+      font-family: Bebas Neue;
+      font-size: 1em;
+      line-height: 86px;
+      /* identical to box height */
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-top: 100px;
+      margin-left: 40px;
+      @media (max-width: 700px) {
+        margin: 100px auto 0 auto;
+
+      }
+    }
+    .FirstLetterText {
+      margin-left: 80px;
+      @media (max-width: 700px) {
+        margin: 0 auto;
+        
+      }
+    }
+  }
+  .loading {
+    position: absolute;
+    bottom: 10px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  .luckylogo {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+}

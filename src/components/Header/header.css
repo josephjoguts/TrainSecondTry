@@ -1,0 +1,118 @@
+.header {
+  position: relative;
+}
+.header .content {
+  position: relative;
+  background: #f5f5f5;
+  border-bottom: 1px solid black;
+  min-height: 1400px;
+}
+@media (max-width: 995px) {
+  .header .content {
+    min-height: 1200px;
+  }
+}
+@media (max-width: 576px) {
+  .header .content {
+    min-height: 1200px;
+  }
+}
+.header .content .logo {
+  margin: 40px 10%;
+}
+.header .content .tittle {
+  display: flex;
+  justify-content: space-around;
+}
+.header .content .tittle h1 {
+  align-self: end;
+  font-family: Bebas Neue;
+  font-size: 96px;
+  line-height: 144px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333333;
+  width: 50%;
+}
+@media (max-width: 995px) {
+  .header .content .tittle h1 {
+    width: 100%;
+  }
+}
+@media (max-width: 798px) {
+  .header .content .tittle h1 {
+    font-size: 72px;
+  }
+}
+@media (max-width: 576px) {
+  .header .content .tittle h1 {
+    font-size: 52px;
+  }
+}
+.header .content .tittle .clock {
+  flex-shrink: 0.1;
+  align-self: start;
+  animation: spin 5s infinite linear;
+}
+@media (max-width: 995px) {
+  .header .content .tittle .clock {
+    display: none;
+  }
+}
+.header .content .train {
+  bottom: -72px;
+  position: absolute;
+  animation: ride 6s 1;
+  left: -30%;
+}
+@media (max-width: 995px) {
+  .header .content .train {
+    width: 1000px;
+  }
+}
+@media (max-width: 576px) {
+  .header .content .train {
+    width: 800px;
+  }
+}
+.header .phone {
+  position: relative;
+  margin-left: 64%;
+  margin-top: -24%;
+}
+@media (max-width: 995px) {
+  .header .phone {
+    width: 300px;
+    margin-top: -30%;
+  }
+}
+@media (max-width: 798px) {
+  .header .phone {
+    width: 200px;
+    margin-top: -36%;
+  }
+}
+@media (max-width: 576px) {
+  .header .phone {
+    width: 150px;
+  }
+}
+
+@keyframes ride {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -30%;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

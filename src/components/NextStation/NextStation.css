@@ -1,0 +1,35 @@
+.NextStation {
+  margin: 0 auto;
+  background: #ececec;
+}
+.NextStation .TrainCard {
+  position: relative;
+  z-index: 4;
+  margin: -180px auto 0 auto;
+}
+.NextStation .SpeedCard {
+  margin: 280px auto 0 auto;
+}
+.NextStation .content {
+  display: flex;
+  max-width: 1920px;
+  margin: 200px auto 0 auto;
+  justify-content: space-around;
+  align-items: center;
+}
+.NextStation .content .AppearingText {
+  max-width: 900px;
+  word-break: normal;
+}
+@media (max-width: 871px) {
+  .NextStation .content .AppearingText {
+    font-size: 56px;
+  }
+}
+@media (max-width: 1800px) {
+  .NextStation .content img {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=NextStation.css.map */

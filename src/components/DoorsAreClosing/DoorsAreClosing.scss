@@ -1,0 +1,38 @@
+.DoorsAreClosing {
+  background: #ececec;
+  .LeninCard {
+    margin: 0 auto;
+    transform: translateY(-300px);
+  }
+  .TraktorozavodCard {
+    margin: 100px auto 0 auto;
+  }
+  .YearCard {
+    margin: 400px auto 0 auto;
+  }
+  .content {
+    position: relative;
+    margin-top: 400px;
+    img {
+      z-index: 3;
+      position: relative;
+      display: block;
+      margin: 0 auto;
+    }
+    .circle {
+      z-index: 2;
+      position: absolute;
+      border-radius: 991px;
+      right: 10%;
+      width: 991px;
+      height: 991px;
+      background: #ffffff;
+      opacity: 0.5;
+    }
+    .AppearingText {
+      z-index: 4;
+      left: 16%;
+      position: absolute;
+    }
+  }
+}

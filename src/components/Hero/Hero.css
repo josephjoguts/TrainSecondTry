@@ -1,0 +1,105 @@
+.Hero {
+  margin-top: 300px;
+  padding-top: 200px;
+  background: #333333;
+  position: relative;
+  overflow: hidden;
+}
+.Hero .content {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+}
+@media (max-width: 1040px) {
+  .Hero .content .phone {
+    display: none;
+  }
+}
+.Hero .content .AppearingText {
+  margin-left: 180px;
+}
+@media (max-width: 1260px) {
+  .Hero .content .AppearingText {
+    margin: auto;
+  }
+}
+.Hero .content .ticket-wrapper .ticket {
+  margin-top: 164px;
+}
+.Hero .content .ticket-wrapper .hand {
+  margin-left: 120px;
+}
+@media (max-width: 1337px) {
+  .Hero .content .ticket-wrapper .hand {
+    transform: rotate(30deg);
+  }
+}
+@media (max-width: 1040px) {
+  .Hero .content .ticket-wrapper .hand {
+    transform: rotate(0deg);
+  }
+}
+@media (max-width: 860px) {
+  .Hero .content .ticket-wrapper .hand {
+    transform: rotate(30deg);
+  }
+}
+.Hero .content .circle {
+  background: #ffffff;
+  opacity: 0.05;
+  width: 991px;
+  height: 991px;
+  border-radius: 991px;
+  position: absolute;
+  top: 30%;
+}
+.Hero .herocard {
+  margin: 500px auto 0;
+}
+.Hero .mainpage {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  font-family: Bebas Neue;
+  font-size: 144px;
+  line-height: 432px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3d3d3d;
+  transform: rotate(-90deg);
+  left: -18%;
+  text-align: start;
+  min-height: 432px;
+  bottom: 30%;
+}
+@media (max-width: 1808px) {
+  .Hero .mainpage {
+    display: none;
+  }
+}
+.Hero .lenin {
+  position: relative;
+  z-index: 1;
+}
+.Hero .show {
+  margin-top: -300px;
+  animation: lenin 500ms 1;
+}
+.Hero .unshown {
+  margin-top: 0px;
+}
+
+@keyframes lenin {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -300px;
+  }
+}
+
+/*# sourceMappingURL=Hero.css.map */

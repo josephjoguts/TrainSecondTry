@@ -1,0 +1,81 @@
+.TrainCard {
+  position: relative;
+  max-width: 1440px;
+  overflow: hidden;
+  min-height: 900px;
+  background: #f5f5f5 url("background.png") no-repeat bottom;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+}
+.TrainCard .text {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-around;
+}
+.TrainCard .text p {
+  max-width: 524px;
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.25em;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.TrainCard .train-wrapper {
+  position: relative;
+  margin-top: 70px;
+  max-width: 800px;
+  min-height: 300px;
+}
+@media (max-width: 574px) {
+  .TrainCard .train-wrapper {
+    display: none;
+  }
+}
+.TrainCard .train-wrapper .people {
+  z-index: 1;
+  left: 160px;
+  top: 140px;
+  position: absolute;
+}
+.TrainCard .train-wrapper .train {
+  z-index: 2;
+  position: relative;
+}
+.TrainCard .luckylogo {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.unshown {
+  margin-left: 80%;
+}
+
+.shown {
+  margin-left: -30%;
+  animation: ride 6s linear;
+}
+
+.jump {
+  animation: jump 500ms 12;
+}
+
+@keyframes ride {
+  0% {
+    margin-left: 80%;
+  }
+  100% {
+    margin-left: -30%;
+  }
+}
+@keyframes jump {
+  0% {
+    transform: translateY(-9px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=TrainCard.css.map */

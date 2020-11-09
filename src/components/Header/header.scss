@@ -1,0 +1,93 @@
+.header {
+  position: relative;
+  .content {
+    position: relative;
+    background: #f5f5f5;
+    border-bottom: 1px solid black;
+    min-height: 1400px;
+    @media (max-width: 995px) {
+      min-height: 1200px;
+    }
+    @media (max-width: 576px) {
+      min-height: 1200px;
+    }
+    .logo {
+      margin: 40px 10%;
+    }
+    .tittle {
+      display: flex;
+      justify-content: space-around;
+      h1 {
+        align-self: end;
+        font-family: Bebas Neue;
+        font-size: 96px;
+        line-height: 144px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #333333;
+        width: 50%;
+        @media (max-width: 995px) {
+          width: 100%;
+        }
+        @media (max-width: 798px) {
+          font-size: 72px;
+        }
+        @media (max-width: 576px) {
+          font-size: 52px;
+        }
+      }
+      .clock {
+        @media (max-width: 995px) {
+          display: none;
+        }
+        flex-shrink: 0.1;
+        align-self: start;
+        animation: spin 5s infinite linear;
+      }
+    }
+    .train {
+      bottom: -72px;
+      position: absolute;
+      animation: ride 6s 1;
+      left: -30%;
+      @media (max-width: 995px) {
+        width: 1000px;
+      }
+      @media (max-width: 576px) {
+        width: 800px;
+      }
+    }
+  }
+  .phone {
+    position: relative;
+    margin-left: 64%;
+    margin-top: -24%;
+    @media (max-width: 995px) {
+      width: 300px;
+      margin-top: -30%;
+    }
+    @media (max-width: 798px) {
+      width: 200px;
+      margin-top: -36%;
+    }
+    @media (max-width: 576px) {
+      width: 150px;
+    }
+  }
+}
+@keyframes ride {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -30%;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

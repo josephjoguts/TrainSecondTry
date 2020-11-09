@@ -1,0 +1,52 @@
+.SpeedCard {
+  position: relative;
+  max-width: 1440px;
+  min-height: 900px;
+  background: #f5f5f5 url("./background.png")no-repeat bottom;
+  /* light */
+  @media (max-width: 944px) {
+  }
+
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+  .logo {
+    margin: 32px 70px;
+    width: 64px;
+    height: 56px;
+  }
+  .SpeedMeter {
+    margin-left: 10%;
+    @media (max-width: 944px) {
+      display: none;
+    }
+  }
+  .FirstLetterText {
+    margin-left: 10%;
+    @media (max-width: 944px) {
+      margin: 0 auto;
+    }
+  }
+  h1 {
+    position: absolute;
+    font-family: Bebas Neue;
+    font-size: 1em;
+    line-height: 86px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #5f60e5;
+    transform: rotate(-90deg);
+    right: 10%;
+    top: 25%;
+    @media (max-width: 944px) {
+      position: static;
+      display: block;
+      max-width:300px ;
+      transform: rotate(0);
+      margin: 0 auto;
+    }
+  }
+  .luckylogo {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+}

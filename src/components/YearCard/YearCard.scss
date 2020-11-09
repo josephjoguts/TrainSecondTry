@@ -1,0 +1,41 @@
+.YearCard {
+  position: relative;
+  overflow: hidden;
+  max-width: 1440px;
+  min-height: 900px;
+  background: #f5f5f5;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+  .FirstLetterText {
+    position: relative;
+    margin: 300px auto;
+    z-index: 1;
+  }
+  .background {
+    top: 10%;
+    left: -10%;
+    position: absolute;
+    @media (max-width: 1275px) {
+      left: -30%;
+    }
+    @media (max-width: 968px) {
+      left: -40%;
+    }
+    @media (max-width: 853px) {
+      left: -50%;
+    }
+    @media (max-width: 761px) {
+      left: -60%;
+    }
+    @media (max-width: 676px) {
+      left: -70%;
+    }
+    @media (max-width: 634px) {
+      left: -75%;
+    }
+  }
+  .luckylogo {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+}

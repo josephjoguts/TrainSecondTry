@@ -1,0 +1,17 @@
+.FirstLetterText {
+  max-width: 524px;
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.25em;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.FirstLetterText::first-letter {
+  float: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 5px;
+  font-size: 48px;
+  line-height: 47px;
+}

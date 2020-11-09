@@ -1,0 +1,28 @@
+.AppearingText {
+  font-family: Bebas Neue;
+  font-size: 1.3em;
+  line-height: 115px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0;
+  max-width: 700px;
+  text-align: center;
+  overflow-wrap: break-word;
+  @media (max-width: 675px) {
+    font-size: 56px;
+  }
+}
+.TextShown {
+  animation: textAnimation 1s 1 linear;
+  opacity: 1;
+}
+@keyframes textAnimation {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

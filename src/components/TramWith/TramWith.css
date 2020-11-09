@@ -1,0 +1,64 @@
+.TramWith {
+  margin-top: 700px;
+  background: #333333;
+  padding-bottom: 700px;
+}
+.TramWith .phones {
+  max-width: 1920px;
+  margin: 0 auto 0 auto;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+}
+.TramWith .phones .phone1.show {
+  margin-top: -300px;
+  animation: show 1s 1 ease;
+}
+.TramWith .phones .phone2.show {
+  margin-top: -300px;
+  animation: show 1s 1 ease-in-out;
+}
+.TramWith .phones .phone3.show {
+  margin-top: -300px;
+  animation: show 1s ease-in;
+}
+.TramWith .RedCard {
+  margin: 300px auto 0 auto;
+}
+.TramWith .content {
+  position: relative;
+}
+.TramWith .content .AppearingText {
+  bottom: 0;
+  left: 10%;
+  position: absolute;
+}
+.TramWith .content img {
+  display: block;
+  margin: auto;
+}
+.TramWith .content .circle {
+  position: absolute;
+  background: #ffffff;
+  opacity: 0.05;
+  width: 991px;
+  height: 991px;
+  border-radius: 991px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.TramWith .TechniqueCard {
+  margin: 0 auto;
+}
+
+@keyframes show {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -300px;
+  }
+}
+
+/*# sourceMappingURL=TramWith.css.map */
